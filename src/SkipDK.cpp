@@ -167,7 +167,7 @@ public:
     }
 };
 
-#define LOCALE_LICHKING_0 "I wish to skip the Death Knight starter questline."
+#define LOCALE_LICHKING_0 "我想跳过死亡骑士新手任务线"
 #define LOCALE_LICHKING_1 "죽음의 기사 스타터 퀘스트 라인을 건너뛰고 싶습니다."
 #define LOCALE_LICHKING_2 "Je souhaite sauter la série de quêtes de démarrage du Chevalier de la mort."
 #define LOCALE_LICHKING_3 "Ich möchte die Todesritter-Starter-Questreihe überspringen."
@@ -205,7 +205,7 @@ public:
                 case LOCALE_enUS: localizedEntry = LOCALE_LICHKING_0; break;
                 default: localizedEntry = LOCALE_LICHKING_0;
                 }
-                AddGossipItemFor(player, GOSSIP_ICON_INTERACT_1, localizedEntry, GOSSIP_SENDER_MAIN, YESSKIPDK, "Are you sure you want to skip the starting zone?", 0, false);
+                AddGossipItemFor(player, GOSSIP_ICON_INTERACT_1, localizedEntry, GOSSIP_SENDER_MAIN, YESSKIPDK, "你确定要跳过新手任务吗？", 0, false);
             }
             player->TalkedToCreature(creature->GetEntry(), creature->GetGUID());
             SendGossipMenuFor(player, player->GetGossipTextId(creature), creature->GetGUID());
